@@ -10,6 +10,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Weapon weapon = new Weapon("dsafdasf", 7.4f, 30);
+            weapon.Zap();
+            weapon.GetInfo();
+            Console.ReadLine();
         }
     }
 }
