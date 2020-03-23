@@ -46,5 +46,24 @@ namespace ConsoleApp1
             }
         }
 
+        public void Zap()
+        {
+            Weapon weapon = new Weapon("dsafdasf", 7.4f, 30);
+            weapon.name = "Desert Eagle";
+            weapon.caliber = 7.3f;
+            weapon.distance = 100;
+        }
+        public void GetInfo()
+        {
+            Weapon weapon = new Weapon("dsafdasf", 7.4f, 30);
+            Console.WriteLine("{0} {1} {2}", weapon.name, weapon.caliber, weapon.distance);
+        }
+
+        public Weapon(string name, float caliber, double distance)
+        {
+            this.name = name;
+            this.caliber = caliber;
+            this.distance = distance;
+        }
     }
 }
